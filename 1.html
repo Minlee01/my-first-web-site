@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1 - html</title>
+<meta charset="utf-8">
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+<h2>HTML</h2>
+<u><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target ="_blank" title ="HTML5 specifications">Hypertext Markup Language</a></u> <strong>HTML</strong> is the standard markup language for documents designed to be displayed in a web browser.
+It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.
+HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.
+HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+HTML elements are delineated by tags, written using angle brackets. 
+<h3><strong>문법</strong></h3>
+<h3>TAG</h3> 뽀족괄호(<>) 안에 (tag) (/tag)
+<h4>Types of tags</h4>
+<h4><strong>1.</strong></h4> bold letters (strong) (/strong)
+<h4><strong>2.</strong></h4> underline  (u)(/u)
+<h4><strong>3.</strong></h4> headings <h1>This is (h1)(/h1)</h1> <h2>This is (h2)(/h2)</h2> <h3>This is (h3)(/h3)</h3>
+<h4>This is (h4)(/h4)</h4> <h5>This is (h5)(/h5)</h5> <h6>This is (h6)(/h6)</h6>
+<h4><strong>4.</strong></h4> html new line tag (br) (no need to close) this can seperate bodies of words with multiple lines
+<h4><strong>5.</strong></h4> html paragraph tag (p)(/p)  this can show that a certain body of words cpnsist a single paragraph
+this can be done with <strong>css</strong> <h6>style="margin-top:(n)px;"</h6>
+<h5>Ex</h5>
+This sentence and the next sentence is seperated using 3 new line tags. <br><br><br> There are no tags behind this sentence.
+<p>This paragraph is seperated using a new paragraph tag. Using a paragraph tag can show the prgrammer where the paragraph starts and ends.
+It does so by making it clear that a group of sentences are in betwen two tags each of which close and open the command. Unlike the new line
+tag 'br' new paragraph tag can only seperate sentences with a single margin.</p> <p style = "margin-top:50px;"> However multiple lines between sentences
+can also be made using the pargraph tag with css language. style="margin-top:-px;". THis paragraph is seperated from the pragraph above using a paragraph tag and a
+css language that commands a 50 pixel margin from the sentence above.</p>
+<h4><strong>6.</strong></h4> insert image (img) <br> this needs more information than just a tag <br> (img src="이미지 주소" width = "100%") <img src="travel.jpg" width="40%"> <br>
+sorce and width of an img tag is an attribute - the order dosen't matter, attribute can give more information to a tag.
+<h3>parent child tag</h3>
+<h4><strong>7.</strong></h4> list tag (li)목차이름(/li) <br> li tag의 부모태그 (ul)li 태그로 묶인 목차들 (/ul) <br> 이때 ul tag는 li tag의 부모태그이며 li tag는 반드시 부모태그를 갖는다.
+<h5>Ex</h5> <ul><li>1.HTML</li> <li>2.CSS</li> <li>3.JavaScript</li></ul><ul>
+  <li>목차1</li><li>목차2</li><li>목차3</li>
+</ul> <br> 앞에 숫자 자동으로 넘버링 하려면 (ol)li 태그로 묶인 목차들(/ol) 태그 사용 ol = ordered list/ ul = unordered list <h5>Ex</h5> <ol>
+  <li>one</li> <li>two</li> <li>three</li>
+</ol>
+<h4><strong>8.</strong></h4> table tag (table)테이블 내용(/table) <br> (tr) 테이블 한 줄의 내용(/tr) / tr= table row <br> (td) 테이블 한 칸의 내용(/td) / td = table cell
+<h5>Ex</h5> (table)(tr)(td)cell1(/td)(td)a(/td)(/tr)(tr)(td)cell2(/td)(td)b(/td)(/tr)(tr)(td)cell3(/td)(td)c(/td)(/tr)(/table) = <table><tr><td>cell1</td><td>a</td></tr><tr><td>cell2</td><td>b</td></tr><tr><td>cell3</td><td>c</td></tr></table>
+ <h4>9번과 10번은 head tag 아래 묶이는 성질을 가짐</h4><h4><strong>9.</strong></h4> title 웹페이지 제목 설정 태그 (title)제목(/title)
+<h4><strong>10.</strong></h4> meta tag (meta charset = "") charset = character set  utf-8 = utf 8 파일로 문서 읽어라.
+<h4><strong>11.</strong></h4> <h5>head tag</h5> 문서 제목, 타입 성정하는 태그들은 (head)(/head)로 묶임 <h5>body tag</h5> head tag를 제외한 모든 내용은 body tag 로 묶임. 따라서 모든 내용은 head tag 나 body tag 아래에 놓임. <h5>html tag</h5> head tag 와 body tag 는 html 태그로 묶임 (html)(head)(/head)(body)(/body)(/html)
+html 태그 위에는 이 문서는 html 임을 나타내는 (!doctype html) 써야함.
+<h4><strong>12.</strong></h4> link tag (a="링크거는 페이지 주소")링크거는 단어(/a) -> 링크페이지로 이동 / (a="링크거는 페이지 주소" target="_blank")링크거는 단어(/a) -> 링크 걸린 페이지 새 탭으로 열림 <br> 링크에 커서 올렸을때 tool tip으로 어떤 페이지인지 알려주고 싶을떄 (a="링크거는 페이지 주소" title = "tooltip에 뜰 내용")링크거는 단어(/a)
+</body></html>
